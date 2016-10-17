@@ -1,0 +1,251 @@
+﻿/*
+Aquacell Styling
+Jordan Haines
+web: www.jordanairwave.co.uk
+Twitter: @jordanairwave
+Facebook: www.facebook.com/jordanairwave.co.uk
+
+Colours used
+
+#fff = White
+#097baf = blue
+
+*/
+
+/* ------------------------------------------------------------------------------------------------------
+	CSS Reset - http://meyerweb.com/eric/tools/css/reset/ 
+------------------------------------------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin : 0; padding : 0; border : 0; outline : 0; font-size : 100%; vertical-align : baseline; background : transparent; }
+body { line-height : 1; }
+ol, ul { list-style-type : none; }
+blockquote, q { quotes : none; }
+blockquote:before, blockquote:after, q:before, q:after { content : ''; content : none; }
+:focus { outline : 0; }
+ins { text-decoration : none; }
+del { text-decoration : line-through; }
+table { width : 99%; margin-bottom : 1.4em; }
+tr:nth-child(even) { background-color : #000; background-color : rgba(0,0,0,.6); }
+th { border-bottom : 2px solid #2a2e18; font-weight : bold; text-align : left; }
+td { border-bottom : 1px solid #2a2e18; }
+th,td { padding : 4px 10px 4px 0; }
+tr:last-child td { border-bottom-width : 0; }
+tfoot { font-style : italic; }
+caption { background : transparent; }
+
+/* -----------------------------------------------------------------------------------------
+
+	Font sizes use percentages and are based on Yahoo YUI 2 font sizes - http://yui.github.io/yui2/docs/yui_2.9.0_full/fonts/
+	- If you want a bigger font use the formula size x 7.7 (50px x 7.7)
+----------------------------------------------------------------------------------------- */
+html { -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; }
+body { font: 13px "Arial", sans-serif; line-height: 13px; color: #fff; background-color: #000; }
+h1 { font-size: 277.2%/*36px*/; line-height: 120%; margin-bottom: 15px; }
+h2 { font-size: 308% /*40px*/; line-height: 130%; margin-bottom: 15px; color: #097baf; }
+h3 { font-size: 138.55% /*18px*/; line-height: 140%; margin-bottom: 15px; }
+h4 { font-size: 116% /*15px*/; line-height: 140%; margin-bottom: 15px; }
+h5 { font-size: 93%/*12px*/; line-height: 140%; margin-bottom: 15px; }
+p { margin-bottom: 15px; font-size: 100%; line-height: 150%; }
+li { font-size: 100%; line-height: 150%; margin-bottom: 5px; }
+ul, ol { margin-left: 30px; }
+ul { list-style-type : disc; list-style-position : inside; margin-bottom: 15px; }
+ol { list-style-type : decimal; list-style-position : inside; margin-bottom: 15px; }
+abbr, acronym { border-bottom-width: 0; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+
+/* General link styling */
+a:link,
+a:active,
+a:visited { text-decoration: none; color: #fff; }
+a:hover,
+a:focus { text-decoration: underline; color: #000; }
+
+/* Clear fix */
+.clearfix:after { content: "."; visibility: hidden; display: block; height: 0; clear: both; }
+
+/* ------------------------------------------------------------------------------------------------------
+	General Styles
+------------------------------------------------------------------------------------------------------*/
+
+body {
+	position: relative;
+	overflow: hidden;
+}
+
+article, aside, details, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+img { max-width: 100%; }
+
+.content-wrapper {
+	position: relative;
+	display: block;
+	margin: 0 auto 0 auto;
+	padding: 0 0 0 0;
+	width: 100%;
+	max-width: 960px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.background-images {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#core-still {
+	opacity: 0.8;
+}
+
+#core-still-lightening {
+	display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------
+	Header Styles
+------------------------------------------------------------------------------------------------------*/
+#header {
+	border-bottom: 1px solid #097baf;
+	background-color: rgba(0,0,0,0.7);
+	padding: 5px 0 5px 0;
+}
+
+#mobile-menu {
+	display: none;
+	float: right;
+}
+
+#main-nav {
+	display: block;
+	float: right;
+	margin: 0 0 0 0;
+	padding: 10px 0 10px 0;
+	vertical-align: middle;
+}
+
+#main-nav ul {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#main-nav ul li {
+	display: inline-block;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#main-nav ul li a:link,
+#main-nav ul li a:active,
+#main-nav ul li a:visited {
+	display: block;
+	color: #fff;
+	padding: 0px 5px 0px 5px;
+}
+
+#main-nav ul li a:hover,
+#main-nav ul li a:focus {
+	color: #097baf;
+	text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------
+	Main Content Styles
+------------------------------------------------------------------------------------------------------*/
+#main-content {
+	text-align: center;
+}
+
+#main-content .content-wrapper {
+	padding: 100px 0 100px 0;
+}
+
+#main-content ul {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+#main-content ul li {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	box-sizing: border-box;
+	padding: 3px;
+}
+
+#aquacell-logo {
+	margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+	Media Queries
+-------------------------------------------------------------------------------------------------------*/
+@media all and (max-width: 980px) {
+/* --- Header Styles --- */
+	#header {
+		padding: 5px 5px 5px 5px;
+	}
+	
+	#mobile-menu {
+		display: block;
+	}
+	
+	#main-nav {
+		display: block;
+		float: none;
+		padding: 0 0 0 0;
+	}
+	
+	#main-nav ul {
+		display: none;
+	}
+	
+	#main-nav ul li {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	#main-nav ul li a:link,
+	#main-nav ul li a:active,
+	#main-nav ul li a:visited {
+		padding: 5px 5px 5px 5px;
+	}
+}
+
+@media all and (max-width: 850px) {
+	/* -- Main Content Styles -- */
+	#main-content ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		width: 100%;
+		max-width: 500px;
+		margin: 0 auto 0 auto;
+
+	}
+	
+	#main-content ul li {
+		-webkit-box-flex: 0;
+		    -ms-flex: none;
+		        flex: none;
+		width: 100px;
+		box-sizing: border-box;
+		padding: 3px;
+	}
+}
